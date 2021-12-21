@@ -10,6 +10,7 @@
     <title>Blazor Server - Auto Reload</title>
     <base href="~/" />
     <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/components-reconect-modal.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
     <link rel="stylesheet" href="BlazorServerAutoReload.styles.css" />
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
@@ -26,6 +27,13 @@
         </environment>
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
+    </div>
+
+    <div id="components-reconnect-modal">
+        <div class="loading">
+            <div class="loading-caption">Unable to connect to server. Reconnecting...</div>
+            <div class="loading-progress-ring"></div>
+        </div>
     </div>
 
     <script src="_framework/blazor.server.js"></script>
